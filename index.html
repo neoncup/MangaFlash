@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  -->
+    <link rel="stylesheet" href="./asstes/icons/css/all.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/layouts/header.layout.css">
+    <link rel="stylesheet" href="./css/layouts/body.layout.css">
+    <link rel="stylesheet" href="./css/layouts/footer.layout.css">
+    <!--  -->
+
+    <!--  -->
+    <script src="./utils/scripts/jquery.min.js"></script>
+    <script src="./utils/scripts/router.js"></script>
+    <!--  -->
+    
+    <title>Scannot</title>
+</head>
+<body>
+    
+    <div class="app">
+        <div class="win size">
+            <!-- Loaded Page -->
+            <div class="loaded"></div>
+
+            <header>
+                <nav class="heabar">
+                    <nav>
+                        <span><img src="" alt="logo"></span>
+                        <span><label class="label">Home</label></span>
+                        <span><i class="fa fa-search"></i></span>
+                    </nav>
+                </nav>
+            </header>
+
+            <div class="body">    
+                <!-- HOME -->
+                <div class="home">
+                    <div class="container">
+                        <div class="cards"></div>
+                    </div>
+                </div>
+                <!-- HOME -->
+
+                <!-- MANHWAS -->
+				<div class="mangas">
+					<div class="container">
+						<div class="cards"></div>
+					</div>
+				</div>
+                <!-- MANHWAS --> 
+                
+                <!-- NOVELS -->
+				<div class="novels">
+					<div class="container">
+						<div class="cards"></div>
+					</div>
+				</div>
+                <!-- NOVELS -->
+            </div>
+            
+            <!-- Footer | Foobar -->
+            <footer>
+                <nav class="foobar">
+                    <span class="btnActive" onclick="rooter_navigate(1)"><i class="fa fa-house"></i></span>
+                    <span onclick="rooter_navigate(2)"><i class="fa fa-server"></i></span>
+                    <span onclick="rooter_navigate(3)"><i class="fa fa-book-open"></i></span>
+                </nav>
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>

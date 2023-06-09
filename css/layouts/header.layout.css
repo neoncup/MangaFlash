@@ -1,0 +1,64 @@
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: var(--back-color-bor);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+    z-index: 998;
+}
+header .heabar {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .heabar nav{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header span, header label {
+    margin: 0 auto;
+}
+header span:nth-child(1) {
+    width: 50px;
+    height: 50px;
+}
+header span:nth-child(2){
+    height: 40px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+header span:nth-child(2) label{
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--txt-color-def);
+    font-family: sans-serif;
+}
+header span:nth-child(3){
+    border: 1px solid var(--icon-color-def);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header span i{
+    color: var(--icon-color-def);
+}

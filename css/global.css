@@ -1,0 +1,64 @@
+:root {
+    
+    /* Pallete Colours */
+    --back-color-def: #000000;
+    --back-color-alt: #323232;
+    --back-color-bor: #1f1f1f;
+
+    --btn-color: linear-gradient(45deg, #fe548e, #af2da4);
+    --icon-color-def: #d7d7d7;
+    --icon-color-alt: #ffffff;
+
+    --txt-color-def: #ffffff;
+    --txt-color-alt: #d7d7d7;
+
+    /* Phone pallete colors */
+    --mob-border-color-def: #f2f5f4;
+}
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #111;
+}
+.app {
+    max-width: 400px;
+    min-width: 400px;
+    width: 100%;
+    height: calc(100% - 20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background: var(--back-color-def);
+}
+.win {
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    border-radius: 40px;
+    background: var(--back-color-alt);
+}
+.win::before {
+    position: absolute;
+    content: '';
+    left: 50%;
+    width: 200px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translateX(-50%);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: var(--back-color-def);
+    z-index: 999;
+}

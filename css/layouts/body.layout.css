@@ -1,0 +1,19 @@
+.body {
+    background: var(--back-color-alt);
+    position: fixed;
+    min-width: calc(400px - 20px);
+    max-width: calc(400px - 20px);
+    width: 100%;
+    min-height: calc(100vh - 180px);
+    max-height: calc(100vh - 180px);
+    height: 100%;
+    top: 100px;
+    overflow: hidden;
+}
+.body .layouts {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.body .layouts::-webkit-scrollbar {width: 15px;}
